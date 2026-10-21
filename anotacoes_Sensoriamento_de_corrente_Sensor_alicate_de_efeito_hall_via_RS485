@@ -1,0 +1,66 @@
+# Alimentação
+
+Basicamente liga na fonte direto 24V e conecta os pinos A e B no USB RS485. Logo em seguida,
+o USB RS485 ele envia ao sensor através do protocolo UART
+
+# Protocolo RS485 serial comparado a UART
+
+O protocolo do USB RS485 é a mesma coisa do UART o que gera menos preocupações. Os parâmetros
+exigidos para isso de acordo com a próprio manual fornecido seria de que:
+* Velocidade : 9600 baud rate
+* Bits de dados: 8
+* Bits de parada: 1
+* Paridade: não especificado (Pesquisar configuração **8N1**)
+* RS485: Half-duplex (consegue transmitir quanto receber dados em ambos os sentidos)
+
+## Como é organizado para solicitar ao sensor
+
+O sensor oganizada os dados em um valor hexadecimal. O registrador responsável pela medição 
+de um circuito seria 000EH, somente para leitura
+```C
+01 03 00 0E 00 01 E5 C9
+```
+01 = endereço do registrador
+03 = solicitação de leitura de registradores
+00 0E = endereço inicial do registrador
+00 01 = quantidade: um registrador
+E5 C9 = CRC de verificação, respectivamente, corresponde ao byte baixo e o byte alto.
+
+## Como receber e interpretar
+Exemplo de um endereço hexadecimal contendo a instrução:
+```C
+01 03 02 05 DC BA 8D
+```
+01 = endereço do sensor que respondeu
+03 = função de leitura correspondente à solicitação
+02 = quantidade de bytes de Dados que vêm a seguir
+05 = byte alto do valor medido
+DC = byte baixo do valor medido
+BA = byte baixo do CRC da resposta
+8D = byte alto do CRC da resposta
+
+### Outros dois registradores importantes
+
+```C
+01 03 00 04 00 02 85 CA
+```
+O código acima tem como o endereço 01H e um código de velocidade 60H, esse 60H é igual
+a 9600 baud.
+0x0004 = endereço do escravo (leitura e escrita)
+0x0005 = velocidade de comunicação, quer dizer, da velocidade serial (leitura e escrita)
+0x000E = valor medido de um circuito (somente leitura)
+
+Sobre a comunicação, aqui tá o mapeamento:
+Velocidade	Código hexadecimal gravado no registrador 0005
+1200 baud	0x000C
+2400 baud	0x0018
+4800 baud	0x0030
+9600 baud	0x0060
+19200 baud	0x00C0
+38400 baud	0x0180
+57600 baud	0x0240
+115200 baud	0x0480
+
+CRC = _Cyclic Redundancy Check_ = verificação que ajuda a detectar se os dados foram
+corrompidos durante a trnamissão.
+
