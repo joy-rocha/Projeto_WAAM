@@ -34,3 +34,4 @@
 
 - **Filtro de Tráfego Geral (Banco 1 $\rightarrow$ FIFO 0):** Configurado em modo máscara zerada ("passa-tudo") para direcionar o restante da telemetria e comandos genéricos para a **FIFO 0**.
 
+---

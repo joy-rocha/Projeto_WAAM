@@ -64,6 +64,8 @@ Organização é o layout oficial da norma ISO 11898-1 que define como os bits s
 
 ![[Pasted image 20261020104858.png]]
 
+$-$ O tamanho máximo da mensagem completa (**overhead/header + dados**), considerando o pior cenário (carga útil máxima e formato estendido), ==chega a **128 bits no CAN Clássico**==
+
 **Vamos utilizar o CAN 2.0A (Standard - 11 bits)**
 ```c
 TxHeader.IDE = CAN_ID_STD;  // Define ID Padrão (11 bits - CAN 2.0A)
