@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <ThresholdFilter level="INFO"/>
+    <Appenders>
+        <RollingFile name="DEBUGFILE" fileName="/home/luisarruda/Documents/engenharia_da_computacao/2026/projetos_de_pesquisa/projeto_de_pesquisa_WAAM/sensor_alicate_hall_RS485/testes_modulos/.metadata/.ide.log" filePattern="/home/luisarruda/Documents/engenharia_da_computacao/2026/projetos_de_pesquisa/projeto_de_pesquisa_WAAM/sensor_alicate_hall_RS485/testes_modulos/.metadata/.ide.log-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%p] %c{1}:%L - %m%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="50MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="ALL">
+            <AppenderRef ref="DEBUGFILE" />
+        </Root>
+    </Loggers>
+</Configuration>

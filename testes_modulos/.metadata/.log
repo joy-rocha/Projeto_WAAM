@@ -1,0 +1,13 @@
+!SESSION 2026-10-20 08:02:06.643 -----------------------------------------------
+eclipse.buildId=Version 2.2.0
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  /home/luisarruda/Documents/engenharia_da_computacao/2026/projetos_de_pesquisa/projeto_de_pesquisa_WAAM/sensor_alicate_hall_RS485/testes_modulos/testes_modulos.ioc
+Command-line arguments:  -os linux -ws gtk -arch x86_64 /home/luisarruda/Documents/engenharia_da_computacao/2026/projetos_de_pesquisa/projeto_de_pesquisa_WAAM/sensor_alicate_hall_RS485/testes_modulos/testes_modulos.ioc
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-10-20 08:02:37.516
+!MESSAGE Log4j2 initialized with config file /home/luisarruda/Documents/engenharia_da_computacao/2026/projetos_de_pesquisa/projeto_de_pesquisa_WAAM/sensor_alicate_hall_RS485/testes_modulos/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-10-20 08:02:39.885
+!MESSAGE Started RMI Server, listening on port 41337
