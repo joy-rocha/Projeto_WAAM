@@ -9,6 +9,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/luisarruda/Documents/engenharia_da_computacao/2026/projetos_de_pesquisa/projeto_de_pesquisa_WAAM/sensor_alicate_hall_RS485"/>
 			<item value="/home/luisarruda/Documents/engenharia_da_computacao/2026/projetos_de_pesquisa/projeto_de_pesquisa_WAAM/sensor_alicate_hall_RS485/testes_modulos"/>
 		</list>
 		<section name="STSmartImportWizard.dialogBounds">
@@ -16,6 +17,13 @@
 			<item key="DIALOG_Y_ORIGIN" value="20"/>
 			<item key="DIALOG_WIDTH" value="613"/>
 			<item key="DIALOG_HEIGHT" value="550"/>
+			<item key="DIALOG_FONT_NAME" value="1|Open Sans|10.5|0|GTK|1|"/>
+		</section>
+		<section name="SmartImportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="20"/>
+			<item key="DIALOG_Y_ORIGIN" value="20"/>
+			<item key="DIALOG_WIDTH" value="875"/>
+			<item key="DIALOG_HEIGHT" value="637"/>
 			<item key="DIALOG_FONT_NAME" value="1|Open Sans|10.5|0|GTK|1|"/>
 		</section>
 	</section>
