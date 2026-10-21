@@ -30,9 +30,7 @@
 ---
 ### ***Estratégia de Filtragem e Priorização por Hardware (Dual FIFO)***
 
-Para otimizar o uso da CPU e garantir rápida resposta a eventos críticos, a filtragem foi configurada em dois níveis encadeados utilizando os **Bancos de Filtros** do bxCAN:
-
 - **Filtro de Alta Prioridade (Banco 0 $\rightarrow$ FIFO 1):** Mapeado para capturar exclusivamente mensagens de emergência ou parada de segurança (faixa de IDs `0x010` a `0x01F`). Essas mensagens são direcionadas à **FIFO 1**, acionando uma rotina de interrupção com prioridade máxima no NVIC.
-    
+
 - **Filtro de Tráfego Geral (Banco 1 $\rightarrow$ FIFO 0):** Configurado em modo máscara zerada ("passa-tudo") para direcionar o restante da telemetria e comandos genéricos para a **FIFO 0**.
 

@@ -70,3 +70,5 @@ sFilterConfig.FilterFIFOAssignment = CAN_RX_FIFO0; // Vai para a FIFO 0
 
 HAL_CAN_ConfigFilter(&hcan1, &sFilterConfig);
 ```
+
+---

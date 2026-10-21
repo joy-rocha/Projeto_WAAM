@@ -85,3 +85,5 @@ Funções executadas de forma assíncrona pelo hardware quando um pacote chega d
 ### 7. Trava de Erro (`Error_Handler`)
 
 - **`Error_Handler()`**: Se qualquer etapa de inicialização (filtro, partida ou interrupção) falhar, a placa desativa as interrupções (`__disable_irq()`) e entra em um laço infinito travado por segurança.
+
+---

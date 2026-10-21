@@ -16,7 +16,7 @@ $$V_{\text{diferencial}} = V_{\text{CAN\_H}} - V_{\text{CAN\_L}}$$
 
 o pino TX manda sinais digitais que são convertidos pelo Transceiver para analógico, gerando as tensões certas no HIGH e no LOW, o RX monitora o CAN_H e o CAN_L, calcula a diferença e transforma em um sinal digital (0 ou 1) enviado pelo RX.
 
-==***CONFIGURAÇÃO***==
+==***CONFIGURAÇÃO DO FILTRO***==
 É necessário a configuração de um filtro, que  funciona totalmente via hardware, ele verifica o id da mensagem e se não for do interesse do chip ele já descarta, se for um id válido ele da passagem para o uso da CPU. (o STM32F446RET6 possui 28 bancos de filtros no total).
 
 ***==PADRÃO DE MENSAGEM==***
