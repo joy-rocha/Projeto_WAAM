@@ -3,9 +3,9 @@
 ---
 ### ***PERIFÉRIOCOS UTILIZADOS***
 
-$->$ **microcontrolador usado STM32F446RET6**
+$->$ **microcontrolador usado STM32F412RET6**
 
-==**O microcontrolador STM32F446RET6 não possui suporte nativo para CAN FD.**== Ele integra o periférico conhecido como **bxCAN** (Basic Extended CAN), que oferece suporte exclusivo ao protocolo **CAN 2.0A e CAN 2.0B ativo**.
+==**O microcontrolador STM32F412RET6 não possui suporte nativo para CAN FD.**== Ele integra o periférico conhecido como **bxCAN** (Basic Extended CAN), que oferece suporte exclusivo ao protocolo **CAN 2.0A e CAN 2.0B ativo**.
 
 | ![[Pasted image 20261019130844.png\|130]] | ![[Pasted image 20261020214129.png\|133]] |
 | ----------------------------------------- | ----------------------------------------- |

@@ -2,7 +2,7 @@
 ---
 ### ***Seleção do Protocolo e Microcontrolador***
 
- **Limitação do Hardware:** O microcontrolador **STM32F446RET6** possui periféricos **bxCAN** (Basic Extended CAN), que suportam nativamente o padrão **CAN 2.0A** (ID Standard de 11 bits) e **CAN 2.0B** (ID Extended de 29 bits), **não possuindo suporte a CAN FD** (Flexible Data-rate).
+ **Limitação do Hardware:** O microcontrolador **STM32F412RET6** possui periféricos **bxCAN** (Basic Extended CAN), que suportam nativamente o padrão **CAN 2.0A** (ID Standard de 11 bits) e **CAN 2.0B** (ID Extended de 29 bits), **não possuindo suporte a CAN FD** (Flexible Data-rate).
  
 **Decisão de Projeto:** Optou-se pelo uso da norma **CAN 2.0A (Standard - 11 bits)** rodando a uma taxa de transmissão de **500 kbps**, o que fornece até 2.048 identificadores únicos — capacidade mais do que suficiente para o controle e monitoramento do sistema.
 
