@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PONTE_H/PWM Cube MX.md",
+                "file": "ENCODER/MagnTek MT6701-ACD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PWM Cube MX"
+              "title": "MagnTek MT6701-ACD"
             }
           }
         ]
@@ -200,8 +200,9 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ded97c9376ef5303",
+  "active": "ed7dc33144a4e562",
   "lastOpenFiles": [
+    "PONTE_H/PWM Cube MX.md",
     "ENCODER/MagnTek MT6701-ACD.md"
   ]
 }
